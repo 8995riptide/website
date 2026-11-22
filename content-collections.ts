@@ -3,7 +3,7 @@ import { z } from "zod";
  
 const notes = defineCollection({
   name: "notes",
-  directory: "../notes",
+  directory: "./public/notes",
   include: "**/*.md",
   schema: z.object({
     title: z.string().optional(),
