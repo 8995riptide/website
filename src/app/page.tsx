@@ -372,6 +372,7 @@ export default function Home() {
       />
                   <InteractiveTerminal
         command="start-the-wave"
+        autoExecute
         variant="sky"
         title="bash — 80×24"
         steps={[
