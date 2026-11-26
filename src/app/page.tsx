@@ -384,7 +384,7 @@ export default function Home() {
           "Unleashing the tides...",
         ]}
         finalMessage={`Welcome to 8995 Riptide!`}
-        stepDelay={900}
+        stepDelay={200}
         className="fixed inset-0 z-[9999] grid place-items-center bg-black p-4"
       />
       <SiteHeader />
