@@ -86,6 +86,9 @@ importers:
       react-router-hash-link:
         specifier: ^2.4.3
         version: 2.4.3(react-router-dom@7.18.5(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+      react-wavify:
+        specifier: ^1.12.0
+        version: 1.12.0(react@19.3.0)
       recharts:
         specifier: 3.10.1
         version: 3.10.1(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react-is@19.3.1)(react@19.3.0)(redux@5.0.1)
@@ -4685,6 +4688,11 @@ packages:
     peerDependenciesMeta:
       react-dom:
         optional: true
+
+  react-wavify@1.12.0:
+    resolution: {integrity: sha512-o8ksvP3lYbclXUn/vLCVIuZEkPlDgF0uZ+Ck482T6Wxh4vVwQstAPrGib5Tkb/mdHiHitacz81qYTM3d1aZF9g==}
+    peerDependencies:
+      react: ^0.13.0 || ^0.14.0 || >=15
 
   react@19.3.0:
     resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
@@ -10509,6 +10517,10 @@ snapshots:
       react: 19.3.0
     optionalDependencies:
       react-dom: 19.3.0(react@19.3.0)
+
+  react-wavify@1.12.0(react@19.3.0):
+    dependencies:
+      react: 19.3.0
 
   react@19.3.0: {}
 

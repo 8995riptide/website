@@ -385,13 +385,10 @@ export default function Home() {
         ]}
         finalMessage={`Welcome to 8995 Riptide!`}
         stepDelay={900}
-        className="fixed inset-0 z-[9999] grid place-items-center bg-black/80 p-4"
+        className="fixed inset-0 z-[9999] grid place-items-center bg-black p-4"
       />
       <SiteHeader />
       <ScrollProgress/>
-      <FollowingPointer
-      label="You(viewer)"
-    >
 
       <main>
         {/* Hero + live showcase */}
@@ -609,7 +606,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      </FollowingPointer>
       <SiteFooter />
     </>
   );

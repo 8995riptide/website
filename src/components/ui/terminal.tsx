@@ -2,6 +2,8 @@
 import type React from "react";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import Slide from '@mui/material/Slide';
+import Wave from 'react-wavify'
 import {
   Send,
   Copy,
@@ -203,17 +205,16 @@ function InteractiveTerminal({
       return "success" as const;
     return "step" as const;
   };
-
+  type WavePhase = "waiting" | "rising" | "falling" | "done";
   const showInput = !autoExecute && step === 0 && !commandExecuted;
-
+  const [waveGone, setWaveGone] = useState(false);
+  const [wavePhase, setWavePhase] = useState<WavePhase>("waiting");
   const buttonClasses =
     "flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs text-black/60 transition-colors hover:bg-black/10 hover:text-black dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white";
   useEffect(() => {
-      if (!completed) return;
-      const timeoutid = window.setTimeout(() => {
-        setShow(false);
-      }, 2000);
-      return () => clearTimeout(timeoutid);
+  if (!completed) return;
+  const timer = window.setTimeout(() => setWavePhase("rising"), 2000);
+  return () => clearTimeout(timer);
   }, [completed]);
   return (
     <>
@@ -469,8 +470,42 @@ function InteractiveTerminal({
       </div>
     </div>
   )}
+  {(wavePhase === "rising" || wavePhase === "falling") && (
+    <div className="fixed inset-0 z-[9999] overflow-hidden">
+          <motion.div className="absolute inset-x-0 top-0 h-[calc(100dvh+120px)]"
+    initial={{ y: "100%" }}
+    animate={{y: wavePhase === "rising" ? "-10%" : "100%"}}
+    transition={{
+      duration: wavePhase === "rising" ? 1.6 : 1.2,
+      ease: "easeInOut",
+    }}
+    onAnimationComplete={() => {
+      if (wavePhase === "rising") {
+        setShow(false)
+        window.setTimeout(() => setWavePhase("falling"), 2000);
+      } else {
+        setWavePhase("done")
+      }
+    }}>
+<Wave fill='#02baf7'
+        paused={false}
+      style={{
+        position: "absolute",
+        inset: 0,
+        width: "100%",
+        height: "300dvh",
+        display: "block",
+      }}
+        options={{
+          height: 1,
+          amplitude: 100,
+          speed: 0.15,
+          points: 3
+        }}
+  />
+      </motion.div> </div> )}
   </>
   );
-}
+} 
 
 export default InteractiveTerminal;

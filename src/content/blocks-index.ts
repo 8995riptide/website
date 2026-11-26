@@ -6,7 +6,6 @@ import { HeroGlobe } from "@/components/blocks/hero-globe";
 import { HeroScreenshot } from "@/components/blocks/hero-screenshot";
 import { HeroSplitPhone } from "@/components/blocks/hero-split-phone";
 import { HeroWaves } from "@/components/blocks/hero-waves";
-import { HeroGridMinimal } from "@/components/blocks/hero-grid-minimal";
 import { FeaturesBento } from "@/components/blocks/features-bento";
 import { FeaturesIconGrid } from "@/components/blocks/features-icon-grid";
 import { FeaturesTabs } from "@/components/blocks/features-tabs";
@@ -39,7 +38,6 @@ export const blockComponents: Record<string, ComponentType> = {
   "hero-screenshot": HeroScreenshot,
   "hero-split-phone": HeroSplitPhone,
   "hero-waves": HeroWaves,
-  "hero-grid-minimal": HeroGridMinimal,
   "features-bento": FeaturesBento,
   "features-icon-grid": FeaturesIconGrid,
   "features-tabs": FeaturesTabs,
