@@ -22,13 +22,13 @@ For the drivetrain, none of us really like building gear trains but we have no o
 
 ### Claw Ideas \+ Toggle Ideas \+ Future Plans  
 For toggles we are planning on having two L-channels stick off of the side of the bot with stand offs on the end and then we can manually push the bot towards the wall to flip the toggles. Later we plan on making motorized toggle stitches with flex wheels and a motor but that would still need to be able to push the wall from the side.  
-            ![alt text](./image1.png) 
+            ![alt text](/notes/image1.png) 
 *Image of initial toggle design*
 
 For the claw we plan on purchasing vex v5 claw bkit so that we can get a claw that can grip the pin/cup and clamp on from both sides. It should work like something from the claw machines the arcades. Although this is our initial design, if we do not get the parts we need we might need to think of something else.  
-                                          ![alt text](./image2.png)  
+                                          ![alt text](/notes/image2.png)  
       *Image of initial claw design*
 
 ### Overall Image of Initial Design  
-                               ![alt text](./image3.png)
+                               ![alt text](/notes/image3.png)
 Some things to note about this image is the fact that the drivetrain cad is pretty shabby for now. This is not what our drivetrain will look like but this is to provide a rough image of everything.

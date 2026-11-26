@@ -10,7 +10,7 @@ This week we got started on building our drivetrain and building our claw. Inste
 
 ### Claw \+ Toggle  
 For our claw, we were planning on using the vex v5 claw kit to build a 2 sided claw but because we wouldn’t have gotten the materials in time so we decided to make a claw using what we have. We were originally thing of making a claw with two arms on both side which both move to grip the pin+cup.  
-                    ![](./image4.png)
+                    ![](/notes/image4.png)
 *Original design plan for claw*   
 By placing two 5x5 c-channels and attaching screw on all corners we made the claw arms. Then we attached a motor to one side of the claw so that one side clamps down while the other side stays stagnant. Although this sounds like it would be unstable, surprisingly it gripped the pin+cup very tightly and it made it easier for our drivers to grip the pin+cup. It also made it easier for our drivers to position the claw to hold the cup because by having on side stagnant, the other side clamps down making the clamping process more accurate. This is our current claw design and we might keep it permanently because it is working very well but we might also switch it up. We used the exact same toggle design as shown last week but istead of playing two stand offs on one L-channel we put one stand-off at the end of the L-channel. We only found steel L-channels so we will have to switch them out next week.
 
