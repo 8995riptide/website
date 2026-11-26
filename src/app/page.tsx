@@ -371,8 +371,7 @@ export default function Home() {
         ]}
       />
                   <InteractiveTerminal
-        command="pnpm run dev"
-        autoExecute
+        command="start-the-wave"
         variant="sky"
         title="bash — 80×24"
         steps={[
